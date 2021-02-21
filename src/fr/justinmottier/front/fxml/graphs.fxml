@@ -1,0 +1,56 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ComboBox?>
+<?import java.lang.String?>
+<?import java.lang.Integer?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.LineChart?>
+
+<GridPane fx:controller="fr.justinmottier.front.controller.GraphsController"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <GridPane GridPane.columnIndex="0" GridPane.rowIndex="0">
+        <ComboBox fx:id="subjectSelector" GridPane.columnIndex="0" GridPane.rowIndex="0">
+            <value>
+                <String fx:value="MAT" />
+            </value>
+        </ComboBox>
+        <ComboBox fx:id="interroSelector" GridPane.columnIndex="1" GridPane.rowIndex="0">
+            <value>
+                <Integer fx:value="0" />
+            </value>
+        </ComboBox>
+    </GridPane>
+    <BarChart fx:id="gradesBarChart" GridPane.columnIndex="0" GridPane.rowIndex="1" prefHeight="500" prefWidth="1000">
+        <xAxis>
+            <CategoryAxis fx:id="gradesBarChartXAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT" fx:id="gradesBarChartYAxis" />
+        </yAxis>
+    </BarChart>
+    <LineChart fx:id="gradesLineChart" GridPane.columnIndex="1" GridPane.rowIndex="1" prefHeight="500" prefWidth="1000">
+        <xAxis>
+            <NumberAxis fx:id="gradesLineChartXAxis" side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="gradesLineChartYAxis" side="LEFT" />
+        </yAxis>
+    </LineChart>
+    <LineChart fx:id="averagesLineChart" GridPane.columnIndex="0" GridPane.rowIndex="2" prefHeight="500" prefWidth="1000">
+        <xAxis>
+            <NumberAxis fx:id="averagesLineChartXAxis" side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="averagesLineChartYAxis" side="LEFT" />
+        </yAxis>
+    </LineChart>
+    <LineChart fx:id="overallAveragesLineChart" GridPane.columnIndex="1" GridPane.rowIndex="2" prefHeight="500" prefWidth="1000">
+        <xAxis>
+            <NumberAxis fx:id="overallAveragesLineChartXAxis" side="BOTTOM"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="overallAveragesLineChartYAxis" side="LEFT" />
+        </yAxis>
+    </LineChart>
+</GridPane>

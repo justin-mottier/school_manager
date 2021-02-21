@@ -1,0 +1,54 @@
+{
+  "classes_per_level": 6,
+  "pupil_per_class": 20,
+  "subjects": {
+    "MAT": {
+      "name": "mathématiques"
+    },
+    "FRA": {
+      "name": "français"
+    },
+    "ANG": {
+      "name": "anglais"
+    },
+    "HGE": {
+      "name": "histoire-géographie"
+    },
+    "PHY": {
+      "name": "physique",
+      "starts_at": 5
+    },
+    "SVT": {
+      "name": "sciences naturelles"
+    },
+    "ART": {
+    "name": "arts"
+    },
+    "MUS": {
+      "name": "musique",
+      "grades": 2
+    },
+    "EPS": {
+      "name": "sport",
+      "grades": 2
+    },
+    "LVE": {
+      "name": "langue vivante",
+      "starts_at": 5
+    },
+    "LAT": {
+      "name": "latin",
+      "optional": true,
+      "only_one": true
+    },
+    "GRE": {
+      "name": "grec",
+      "optional": true,
+      "only_one": true
+    },
+    "AAN": {
+      "name": "anglais avancé",
+      "optional": true
+    }
+  }
+}

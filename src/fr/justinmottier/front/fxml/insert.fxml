@@ -1,0 +1,18 @@
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane fx:controller="fr.justinmottier.front.controller.InsertController"
+            xmlns:fx="http://javafx.com/fxml">
+    <center>
+        <Button fx:id="button" text="Importer un fichier de notes"
+        AnchorPane.topAnchor="50" AnchorPane.bottomAnchor="50"/>
+        </center>
+    <bottom>
+        <Text fx:id="text"/>
+    </bottom>
+    <right>
+        <Text fx:id="textInfo"/>
+    </right>
+</BorderPane>

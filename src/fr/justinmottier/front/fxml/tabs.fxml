@@ -1,0 +1,18 @@
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+
+<TabPane fx:controller="fr.justinmottier.front.controller.TabController"
+         xmlns:fx="http://javafx.com/fxml">
+    <Tab fx:id="graphTab" text="graphs">
+        <fx:include source="graphs.fxml" fx:id="graphs"/>
+    </Tab>
+    <Tab fx:id="gradesTab" text="grades">
+        <fx:include source="grades.fxml" fx:id="grades"/>
+    </Tab>
+    <Tab fx:id="statsTab" text="stats">
+        <fx:include source="stats.fxml" fx:id="stats"/>
+    </Tab>
+    <Tab fx:id="insertTab" text="insert">
+        <fx:include source="insert.fxml" fx:id="insert"/>
+    </Tab>
+</TabPane>
