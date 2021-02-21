@@ -1,6 +1,6 @@
 package fr.justinmottier.front.controller;
 
-import fr.justinmottier.front.FrontMain;
+import fr.justinmottier.front.GUI;
 import javafx.fxml.FXML;
 import javafx.scene.chart.*;
 import javafx.scene.control.ComboBox;
@@ -168,8 +168,8 @@ public class GraphsController {
             this.setGradesBarChart();
             this.setGradesLineChart();
         });
-        this.grades = FrontMain.grades;
-        this.stats = FrontMain.stats;
+        this.grades = GUI.grades;
+        this.stats = GUI.stats;
         this.subjectSelector.getItems().addAll(this.stats.entrySet().iterator().next().getValue().keySet());
         this.updateInterroSelector();
 

@@ -1,6 +1,6 @@
 package fr.justinmottier.front.controller;
 
-import fr.justinmottier.front.FrontMain;
+import fr.justinmottier.front.GUI;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
@@ -27,7 +27,7 @@ public class StatsController {
      * The actions to do to initialize the view
      */
     public void initialize() {
-        this.stats = FrontMain.stats;
+        this.stats = GUI.stats;
 
         for (Map.Entry<String, Map<String, List<Map<String, Double>>>> classEntry: stats.entrySet()) {
             for (Map.Entry<String, List<Map<String, Double>>> statsEntry: classEntry.getValue().entrySet()) {

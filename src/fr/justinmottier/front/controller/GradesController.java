@@ -1,6 +1,6 @@
 package fr.justinmottier.front.controller;
 
-import fr.justinmottier.front.FrontMain;
+import fr.justinmottier.front.GUI;
 import fr.justinmottier.common.SubjectNameHandler;
 import fr.justinmottier.front.model.PupilModel;
 import javafx.beans.property.SimpleStringProperty;
@@ -29,7 +29,7 @@ public class GradesController {
      * The actions to do to initialize the view
      */
     public void initialize() {
-        List<PupilModel> pupils = FrontMain.pupils;
+        List<PupilModel> pupils = GUI.pupils;
         Set<String> columns = new TreeSet<>();
 
         pupils.forEach(x -> columns.addAll(x.grades.keySet()));

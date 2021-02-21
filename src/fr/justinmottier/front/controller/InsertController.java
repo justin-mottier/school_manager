@@ -1,7 +1,7 @@
 package fr.justinmottier.front.controller;
 
 import fr.justinmottier.common.SubjectNameHandler;
-import fr.justinmottier.front.FrontMain;
+import fr.justinmottier.front.GUI;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
@@ -59,7 +59,7 @@ public class InsertController {
             text.setText("Erreur durant la lecture du fichier");
             return;
         }
-        boolean success = FrontMain.client.sendImport(fileContent);
+        boolean success = GUI.client.sendImport(fileContent);
         if (!success) {
             text.setText("Le serveur n'a pas réussi à importer le fichier");
         }

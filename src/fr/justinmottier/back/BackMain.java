@@ -2,6 +2,10 @@ package fr.justinmottier.back;
 
 import fr.justinmottier.back.server.Server;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * The main class of the backend side
  */
@@ -47,7 +51,12 @@ public class BackMain {
      * @param args launch arguments
      */
     public static void main(String[] args) {
-        generateDB();
+        List<String> argsList = new ArrayList<>(Arrays.asList(args));
+        if (argsList.contains("--generate") || argsList.contains("-g")) {
+            System.out.println("Generating the database...");
+            generateDB();
+        }
+        System.out.println("Starting the server...");
         runServer();
     }
 }
